@@ -1,0 +1,38 @@
+/*公共样式--开始*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select { margin: 0; padding: 0; }
+* {/* box-sizing: border-box; */}
+html, body {min-height: 100%;  }
+body { font-family:"Helvetica Neue"/*, "Microsoft YaHei"*/; font-size: 12px; color: #333; width: 100%;}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+ul, ol { list-style: none; }
+img { border: none; vertical-align: middle; }
+a { text-decoration: none; color: #232323; }
+table { border-collapse: collapse; table-layout: fixed; }
+input, textarea { outline: none; border: none; }
+textarea { resize: none; overflow: auto; }
+em { font-style: normal; }
+strong {font-weight:normal;}
+li {float: left;}
+i {font-style: normal;}
+.active { color: #e51436; }
+.auto_con { margin: 0 auto; }
+/*清除浮动*/
+.clearfix { zoom: 1; }
+.clearfix:after { content: "."; width: 0; height: 0; visibility: hidden; display: block; clear: both; overflow: hidden; }
+.fl { float: left }
+.fr { float: right }
+.tl { text-align: left; }
+.tc { text-align: center }
+.tr { text-align: right; }
+/*文字溢出显示省略号*/
+.ellipse { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.inline { display: inline-block; *display: inline; *zoom: 1; }
+.gradient { background: -moz-linear-gradient(top, #ffffff, #f8f8f8); background: -webkit-linear-gradient(top, #ffffff, #f8f8f8); background: -ms-linear-gradient(top, #ffffff, #f8f8f8); background: linear-gradient(top, #ffffff, #f8f8f8);        /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff,endColorstr=#f8f8f8";
+            +background:#f9f9f9;*/ } 
+
+.trangle_up, .trangle_down_gray, .trangle_down_red { height: 0; width: 0; position: absolute; overflow: hidden; border-left: 4px solid transparent; border-right: 4px solid transparent; }
+.trangle_up { border-bottom: 4px solid #666;top: 16px;margin-left: 3px; }
+.trangle_down_gray { border-top: 4px solid #666; top: 16px;margin-left: 3px;}
+.trangle_down_red { border-top: 4px solid #666; }
+.more_a {margin-left: 46px; }
+.curs { cursor:pointer}

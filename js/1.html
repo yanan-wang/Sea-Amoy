@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>导航</title>
+<style>
+	.p1 {
+		width: 100px;
+		height: 20px;
+		border:1px solid #000;
+	}
+	.facorite{
+		color: pink;
+	}
+	li {
+		background-color: red;
+	}
+	.hot{
+		color: pink;
+	}
+	.cool {
+		color: orange;
+	}
+	.complete {
+		color: blue;
+	}
+	#slideAd{
+		width: 200px;
+		height: 80px;
+		position: absolute;
+		right: -360px;
+		top:800px;
+		border:1px solid #000;
+	}
+
+</style>
+</head>
+<body style="height: 2000px">
+	<div id="page">
+		<h1 id="header">list</h1>
+		<h2>buy groceries</h2>
+		<ul>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+			<li id="one" class="hot"><em>fresh</em>figs</li>
+			<li id="two" class="hot">pine nuts</li>
+			<li id="three" class="hot">honey</li>
+			<li id="four" class="hot">balsamic vinegar</li>
+		</ul>
+		<p id="footer">&cope; listKing</p>
+		<div id="slideAd">
+			lsjdflasjdflasdjflkkajsdflkj
+		</div>
+		<!-- <div id="newbtn"><button>new item</button></div> -->
+		<!-- <form id="form">
+			<input type="text"  name="">
+			<input type="submit" id="newbtn"  name="">
+		</form> -->
+	</div>
+ <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+ 	$(function(){
+ 		var $window = $(window);
+ 		var $slideAd  =$('#slideAd');
+ 		var endZone = $('#footer').offset().top -$window.height() -500;
+ 		$(window).on('scroll',function(){
+ 			if ((endZone) < $window.scrollTop()) {
+ 				$slideAd.animate({'right':'0px'},250);
+ 			}else{
+ 				$slideAd.stop(true).animate({'right':'-360px'},250);
+ 			};
+ 		});
+
+ 	});
+
+</script>
+</body>
+</html>
